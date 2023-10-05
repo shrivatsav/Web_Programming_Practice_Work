@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #box {
+        display: flex;
+        justify-content: space-evenly;
+        }
+        #box > div {
+        height: 80px;
+        width: 80px;
+        background-color: purple;
+        }
+        </style>
+<title>ECMAScript</title>
+</head>
+<body>
+<h1>Let, var, const</h1>
+<script type="text/javascript">
+    var major = "CS"
+    const major2 = "Finance"
+    if(major == "CS"){
+        var major = "IT"
+        console.log(major)
+
+    }
+    console.log(major)
+
+    function sendEmail(name,price) {
+        let shipping = 2.95;
+        console.log(`Hello ${name}
+        Price: ${price}
+        Total: ${price + shipping})
+        `);
+    }
+    sendEmail("Amy",12.95)
+
+    var vac = {
+        place:"India",
+        activity:"Sports"
+
+    }
+    function dao({place}) {
+        console.log(`Welcome to ${place}`)
+    }
+    dao(vac)
+</script>
+</body>
+</html>
+
